@@ -1,0 +1,89 @@
+.full-screen{
+    width: 100vw;
+    height:100vh;
+    
+    background-image: url("../../assets/img/homeback.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1240px) {
+    .full-screen{
+        width: 100%;
+        height:100vh;
+    }
+  }
+.full-window{
+    width: 100%;
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.relative{
+    position:relative;
+}
+.z-index-0{
+    z-index: -1;
+}
+.red{
+    background-color: red;
+}
+.margin-top{
+    margin-top: 6vh;
+}
+.menu-bar{
+    margin-top: 8px;
+}
+.menu-item{
+    padding-top: 16px;
+    text-align: center;
+    color: white;
+    font-size: medium; 
+}
+.subtitle{
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+
+.fade-in{
+    animation-duration: 1s;
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.humburger{
+    display: none;
+    text-align: left;
+    padding-left: 32px;
+}
+.title-image{
+    width: 60%;
+    display: inline-block;
+}
+.title{
+    color: white;
+    font-size: 24px;
+    margin-top: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 768px){
+    .humburger{
+        display: inline-block;
+    }
+    .nohamburger{
+        display: none;
+    }
+    .subtitle{
+        font-size: 36px;
+    }
+    .title{
+        font-size: 12px;
+    }
+}

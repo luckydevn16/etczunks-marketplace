@@ -1,0 +1,26 @@
+@import '../../styles/color.less';
+
+.select-back{
+    background-color: transparent;
+    color: white;
+    outline: white solid 1px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    padding:2px 8px;
+    width: 100%;
+    transition: outline 0.5s, color 0.5s, background-color 0.5s;
+}
+.select-back:focus{
+    outline: @link-color solid 1px;
+    color: @link-color;
+}
+.select-back > option {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+}
+.select-back > option:hover {
+    background-color: red;
+    color: black;
+}
